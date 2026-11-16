@@ -18,9 +18,22 @@ Built for Smart India Hackathon 2026, Problem Statement 26263.
 
 ## Tech stack
 
-FastAPI, SQLAlchemy (SQLite), Pydantic, JWT login, bcrypt, openpyxl. The whole backend is one file: `backend/portal.py`.
+- **Backend** – FastAPI, SQLAlchemy (SQLite), Pydantic, JWT login, bcrypt, openpyxl. The whole backend is one file: `backend/portal.py`.
+- **Frontend** – Next.js, React, Recharts. The whole website is one file: `frontend/app/page.js`.
 
-## Run it
+## Project layout
+
+```
+backend/
+  portal.py           API, database tables, validation rules, demo data
+  requirements.txt
+frontend/
+  app/page.js         all screens (login, AICTE admin, institution, public check)
+  app/layout.js
+  package.json
+```
+
+## Run the backend
 
 Needs Python 3.10 or newer.
 
@@ -43,6 +56,20 @@ python -m venv .venv
 - Interactive API docs: http://localhost:8000/docs
 
 `portal.py seed` prints the demo logins. All demo names and IDs are made up.
+
+## Run the frontend
+
+Needs Node.js 18.18 or newer. Start the backend first, then in a second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+- Website: http://localhost:3000
+
+The website talks to the API at `http://localhost:8000`. To point it somewhere else, set `NEXT_PUBLIC_API_URL` before starting it.
 
 ## Main endpoints
 
