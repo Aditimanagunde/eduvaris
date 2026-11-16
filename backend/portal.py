@@ -66,7 +66,7 @@ DATABASE_URL = f"sqlite:///{(BASE_DIR / 'eduvaris.db').as_posix()}"  # one file 
 # AICTE admin account (created by "portal.py seed")
 ADMIN_NAME = "AICTE Admin"
 ADMIN_EMAIL = "admin@example.com"
-ADMIN_PASSWORD = "Admin@123"
+ADMIN_PASSWORD = "kana143"
 
 # Password for the demo institution accounts (institution1@example.com ... institution4@example.com)
 DEMO_INSTITUTION_PASSWORD = "Institute@123"

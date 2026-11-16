@@ -61,7 +61,7 @@ Created by `portal.py seed`. All demo accounts, names and IDs are made up.
 
 | Role | Email | Password |
 | --- | --- | --- |
-| AICTE admin | `admin@example.com` | `Admin@123` |
+| AICTE admin | `admin@example.com` | `kana143` |
 | Institution | `institution1@example.com` to `institution4@example.com` | `Institute@123` |
 
 These are for the local demo only. Change them, and `JWT_SECRET` in `portal.py`, before putting the portal online.
