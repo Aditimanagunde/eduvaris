@@ -55,7 +55,16 @@ python -m venv .venv
 - API: http://localhost:8000
 - Interactive API docs: http://localhost:8000/docs
 
-`portal.py seed` prints the demo logins. All demo names and IDs are made up.
+### Demo logins
+
+Created by `portal.py seed`. All demo accounts, names and IDs are made up.
+
+| Role | Email | Password |
+| --- | --- | --- |
+| AICTE admin | `admin@example.com` | `Admin@123` |
+| Institution | `institution1@example.com` to `institution4@example.com` | `Institute@123` |
+
+These are for the local demo only. Change them, and `JWT_SECRET` in `portal.py`, before putting the portal online.
 
 ## Run the frontend
 
